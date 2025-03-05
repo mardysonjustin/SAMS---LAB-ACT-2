@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>SAMS Student Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/studentDashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="circle circle-left"></div>
+        <div class="circle circle-right"></div>
+
+        <!-- Main card -->
+        <div class="dashboard-card">
+            <div class="card-header">
+                <h1 class="title">Classroom</h1>
+                <div class="header-divider"></div>
+                <button class="add-button">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 10V38M10 24H38" stroke="#1E1E1E" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <div class="profile-wrapper">
+                    <div class="profile-icon">
+                        <svg width="37" height="38" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 21C4.45 21 3.979 20.804 3.587 20.412C3.195 20.02 2.99934 19.5493 3 19V5C3 4.45 3.196 3.979 3.588 3.587C3.98 3.195 4.45067 2.99934 5 3H12V5H5V19H12V21H5ZM16 17L14.625 15.55L17.175 13H9V11H17.175L14.625 8.45L16 7L21 12L16 17Z" fill="#1D1B20"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-title">Enrollled Courses</div>
+
+            <div class="course-card">
+                <div class="course-title">CS 322 - SOFTWARE ENGINEERING</div>
+                <div class="course-code">CS 3201</div>
+                <div class="course-menu">...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal and overlay -->
+    <div class="modal-overlay"></div>
+    
+    <!-- QR Code Modal -->
+    <div class="modal">
+        <div class="qr-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+            </svg>
+        </div>
+        <button class="upload-btn">Scan QR Code</button>
+    </div>
+
+    <!-- Confirmation modal -->
+    <div class="confirmation-modal">
+        <div class="confirmation-title">Are you sure you want to log out?</div>
+        <div class="confirmation-buttons">
+            <button class="btn btn-cancel">Cancel</button>
+            <button class="btn btn-logout">Log out</button>
+        </div>
+    </div>
+
+    <script src="../assets/js/studentDashboard.js"></script>
+</body>
+</html>

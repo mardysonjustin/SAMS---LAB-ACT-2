@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>SAMS Login Page</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="header">SAMS</div>
+            <div class="left-content">
+                <div class="welcome-text">Welcome to SAMS</div>
+                <div class="subtitle">Simplifying Attendance, Monitoring Scans!</div>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="password-field-container">
+                            <input type="password" id="password" placeholder="Enter your password" required>
+                            <button type="button" class="password-toggle">
+                                <svg class="eye-icon" viewBox="0 0 24 24">
+                                    <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember-me">
+                            Remember me
+                        </label>
+                        <div class="forgot-password">Forgot Password?</div>
+                    </div>
+                    <button type="submit" class="login-button">Log In</button>
+                    <div class="signup-text">Don't have an account yet? <span class="signup-link">Sign up</span></div>
+                </form>
+            </div>
+        </div>
+        <div class="right-side">
+            <nav class="nav">
+                <div class="nav-item">About</div>
+                <div class="nav-item">Contact Us</div>
+                <button class="get-started-button">Get Started</button>
+            </nav>
+            <img class="placeholder-image" src="../assets/images/QR Scan.png" alt="QR Scan Illustration">
+            <div class="footer-text">
+                Introducing <span class="bold-text">SAMS</span> – a smart, QR-based attendance system designed to simplify tracking, enhance accuracy, and improve efficiency for students and educators.
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
